@@ -1,4 +1,4 @@
-![Project Screenshot](/public/projects/react/1.png)
+![Project Screenshot](/public/projects/react/2.png)
 
 # 🚀 React Portfolio Project (React + Vite)
 
