@@ -1,8 +1,35 @@
-# React + Vite
+![Project Screenshot](/public/projects/react/1.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀 React Portfolio Project (React + Vite)
 
-Currently, two official plugins are available:
+This is a personal portfolio website built with **React** and **Vite** to showcase projects, skills, and experience. The project is optimized for performance and responsiveness.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## 🌟 Features
+- ⚡ **Fast & Lightweight**: Powered by Vite for quick builds and hot module replacement.
+- 🎨 **Modern UI**: Responsive and visually appealing design.
+- 📜 **Dynamic Content**: Easily customizable sections for projects, skills, and contact information.
+- 🌍 **SEO Friendly**: Optimized for search engines with meta tags.
+- 📱 **Fully Responsive**: Works across all devices (Mobile, Tablet, Desktop).
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** React + Vite, Tailwind CSS (or Bootstrap, if used)
+- **State Management:** React Hooks / Context API (if applicable)
+- **Deployment:** GitHub Pages, Vercel, or Netlify
+
+---
+
+## 📂 Installation & Setup
+
+Clone the repository and install dependencies:
+
+```sh
+# Clone the repo
+git clone https://github.com/mohammedyousifm/React-Portfolio-project.git
+cd React-Portfolio-project
+
+# Install dependencies
+npm install
