@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  font-family: "Roboto", serif;
+  letter-spacing: 0.1px;
+  /* font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100; */
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #000;
+  --secondary: rgb(24 24 27);
+  --border: rgb(63, 63, 70, 0.4);
+  --title: rgb(244 244 245);
+  --subtitle: rgb(161 161 170);
+  --bgheader: rgb(39, 39, 42);
+  --icon-hover: #d4d4d4;
+  --blue: rgb(93, 188, 252);
+}
+
+.light {
+  --primary: rgb(250, 250, 250);
+  --secondary: rgb(255, 255, 255);
+
+  --border: rgb(202, 202, 202, 0.5);
+
+  --title: rgb(39 39 42);
+  --subtitle: rgb(82 82 91);
+
+  --blue: rgb(0, 149, 246);
+
+  --bgheader: rgb(253, 253, 253);
+  --icon-hover: #333;
+}
+
+body {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.container {
+  border: 2px solid var(--border);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary);
+  padding: 0 4.8rem;
+}
+
+.divider {
+  border-bottom: 1px solid var(--border);
+  margin: 3rem 0;
+  width: calc(100% + 4.8rem + 4.8rem);
+  margin-left: -4.8rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+  transition: 0.2s;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.title-all {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  color: var(--blue);
+  margin: 1.9rem 0;
+  margin-bottom: 2.5rem;
+}
+
+.title-all::before,
+.title-all::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: calc(45% - 6%); /* Length of the lines before and after */
+  border-bottom: 2px solid #333; /* The color and thickness of the lines */
+}
+
+.title-all::before {
+  left: 0; /* Position the left line */
+}
+
+.title-all::after {
+  right: 0; /* Position the right line */
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.border {
+  border: 2px solid red;
+}
+
+button {
+  all: unset;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  scale: 0.9;
+}
+
+::-webkit-scrollbar {
+  width: 0.1rem;
+}
+
+::-webkit-scrollbar-track {
+  border: 7px solid #292c3b;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: #d4d4d8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* for Firefox */
+html {
+  scrollbar-color: #555354 #3d4a59;
+}
+
+.scroll2top {
+  background-color: rgba(25, 118, 210, 0.85);
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 3%;
+  text-align: center;
+  border: 1px solid rgba(255, 155, 255, 0.2);
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+.scroll2top {
+  background-color: rgba(25, 118, 210);
+}
+@media (max-width: 1000px) {
+  .container {
+    width: 90%;
+    padding: 0 1.7rem;
+  }
+
+  .title-all::before,
+  .title-all::after {
+    top: 50%;
+    width: calc(35% - 6%); /* Length of the lines before and after */
+  }
+
+  .divider {
+    width: calc(100% + 1.7rem + 1.7rem);
+    margin-left: -1.7rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .title-all::before,
+  .title-all::after {
+    width: calc(33% - 6%); /* Length of the lines before and after */
+  }
+}
+
+@media (max-width: 515px) {
+  .title-all::before,
+  .title-all::after {
+    width: calc(25% - 6%); /* Length of the lines before and after */
+  }
+
+  .title-all {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 98%;
+    padding: 0 1.7rem;
+  }
+
+  .scroll2top {
+    width: 2.2rem;
+    height: 2.2rem;
+    opacity: 0.5;
+  }
+}

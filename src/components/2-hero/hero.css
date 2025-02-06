@@ -1,0 +1,107 @@
+/* ===============================
+   Table Content
+   ===============================
+   1. Left Section
+   2. Right Section
+   3. Model == pop up
+*/
+
+section.hero {
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+section.hero .perent-avatar.flex {
+  align-items: end;
+  gap: 0.6rem;
+  min-height: 88px;
+}
+
+section.hero .left-section {
+  flex-grow: 1;
+}
+
+section.hero .icon-verified {
+  color: var(--blue);
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+section.hero .avatar {
+  width: 88px;
+  border-radius: 50%;
+  border: 1px solid salmon;
+  padding: 2px;
+  box-shadow: 2px 2px 40px rgb(255, 255, 255) inset;
+}
+
+section.hero .title {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin: 24px 24px;
+  color: var(--title);
+}
+
+section.hero p.subtitle {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin: 24px 24px;
+  color: var(--subtitle);
+  margin-bottom: 32px;
+}
+
+section.hero .all-icons {
+  font-size: 1.2rem;
+  gap: 1.5rem;
+  margin: 24px 24px;
+}
+
+section.hero .all-icons div a {
+  font-size: 1.2rem;
+  gap: 1.5rem;
+  color: var(--subtitle);
+}
+
+section.hero .all-icons .icon:hover {
+  font-size: 1.3rem;
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--icon-hover);
+}
+
+/* cv */
+.cv {
+  background-color: var(--bgheader);
+  padding: 0.3rem 0.6rem;
+  border-radius: 55px;
+  box-shadow: 2px 2px 2px rgb(37, 37, 37);
+}
+
+.cv a {
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 0.88rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* animation */
+.animation .SepyMaO1SL {
+  width: 450px;
+  max-width: 100%;
+}
+
+@media (max-width: 820px) {
+  .animation .SepyMaO1SL {
+    margin-top: 3rem;
+    max-width: 100%;
+  }
+
+  section.hero {
+    display: inline !important;
+  }
+
+  section.hero .avatar {
+    margin-top: 2rem !important;
+  }
+}
